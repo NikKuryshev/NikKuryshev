@@ -4,7 +4,9 @@
 
 ### Things I code with
 <a href="https://www.python.org/" rel="nofollow">  
-  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" height="32"/></h1></a>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" height="40"/></h1></a>
+<a href="https://www.postgresql.org/" rel="nofollow">  
+  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original-wordmark.svg" height="40"/></h1></a>
 
 
 ### My road to Data Science
