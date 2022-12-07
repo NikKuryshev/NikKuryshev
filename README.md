@@ -5,7 +5,7 @@
 ### Things I code with
 
 ### My road to Data Science
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=NikKuryshev&repo=Road-to-Data-Sciense)](https://github.com/NikKuryshev/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=NikKuryshev&repo=Road-to-Data-Science)](https://github.com/anuraghazra/github-readme-stats)
 
 <h3 align="left">Where to find me</h3>
 
