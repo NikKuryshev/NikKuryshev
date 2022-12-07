@@ -3,8 +3,12 @@
 <h3 align="center">Pre-Sales Engineer of Data Center Facilities from Moscow,Russia 🇷🇺</h3>
 
 ### Things I code with
+<a href="https://www.python.org/" rel="nofollow">  
+  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" height="32"/></h1></a>
+
 
 ### My road to Data Science
+
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=NikKuryshev&repo=Road-to-Data-Science)](https://github.com/anuraghazra/github-readme-stats)
 
 <h3 align="left">Where to find me</h3>
