@@ -2,8 +2,8 @@ name: Run Swimming Script
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Пример расписания
-  workflow_dispatch:  # Позволяет вручную запускать workflow
+    - cron: '0 3 * * *'
+  workflow_dispatch:
 
 jobs:
   run-swimming:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.10'  # Укажите необходимую версию Python
+        python-version: '3.10'
 
     - name: Run Swimming Script
-      run: python workflows/swimming.py
+      run: python .github/workflows/swimming.py  # Используйте относительный путь от корня репозитория
