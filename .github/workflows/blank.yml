@@ -3,7 +3,7 @@ name: My Scheduled Workflow
 on:
   schedule:
     # Runs at 3 AM UTC every day
-    - cron: '*/5 * * * *'  # cron выражение для настройки расписания
+    - cron: '0 * 0 ? * * *'  # cron выражение для настройки расписания
   workflow_dispatch:  # Позволяет вручную запускать workflow
   
 jobs:
@@ -25,4 +25,4 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run script
-      run: python your_script.py
+      run: python swimming.py
