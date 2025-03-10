@@ -16,7 +16,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.10'
+        python-version: '3.x'  # Укажите необходимую версию Python
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests python-telegram-bot  # Установка необходимых библиотек
 
     - name: Run Swimming Script
-      run: python .github/workflows/swimming.py  # Используйте относительный путь от корня репозитория
+      run: python .github/workflows/swimming.py  # Убедитесь, что путь соответствует структуре вашего репозитория
