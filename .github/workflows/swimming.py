@@ -1,16 +1,17 @@
 import requests
 import json
 import asyncio
+import os
 from telegram import Bot
 from telegram.error import TelegramError
 
 # Настройки
 filename = 'last_week_results.json'
-access_token = '837c7fe4a4e25711dafb6112932d23cee69b445b'
+access_token = os.environ['ACCESS_TOKEN']  # Теперь токен извлекается из переменной окружения
 club_id = '1426803'
 headers = {'Authorization': f'Bearer {access_token}'}
-telegram_bot_token = '8007025688:AAGKaKdhMknkTISuVOoKoVg2cLdwb9bQWZo'
-chat_id = 50820587  # ОБЯЗАТЕЛЬНО число, как вы получили от @userinfobot
+telegram_bot_token = os.environ['TELEGRAM_BOT_TOKEN']  # Тоже из окружения
+chat_id = 50820587
 
 # Читаем файл прошлой недели
 try:
@@ -68,7 +69,7 @@ with open(filename, 'w') as f:
     json.dump(api_response, f)
 
 # Асинхронная функция отправки сообщения в Telegram
-async def send_message_to_telegram(bot_token, chat_id, text,delay_seconds):
+async def send_message_to_telegram(bot_token, chat_id, text, delay_seconds):
     print(f"Сообщение будет отправлено через {delay_seconds / 3600:.2f} часов...")
     await asyncio.sleep(delay_seconds)  # ждём нужное время перед отправкой
     bot = Bot(token=bot_token)
@@ -79,4 +80,4 @@ async def send_message_to_telegram(bot_token, chat_id, text,delay_seconds):
         print(f"❌ Telegram API error: {e}")
 
 # Запускаем асинхронность отправки сообщения
-asyncio.run(send_message_to_telegram(telegram_bot_token, chat_id, message,delay_seconds=10))
+asyncio.run(send_message_to_telegram(telegram_bot_token, chat_id, message, delay_seconds=10))
