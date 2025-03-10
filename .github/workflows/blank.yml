@@ -1,12 +1,12 @@
-name: Run Swimming Script
+name: Update Strava Data and Send Telegram Alert
 
 on:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 9 * * 0'  # Запуск каждое воскресенье в 9 утра по UTC
   workflow_dispatch:
 
 jobs:
-  run-swimming:
+  update-data:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,12 +16,25 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'  # Укажите необходимую версию Python
+        python-version: '3.10'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests python-telegram-bot  # Установка необходимых библиотек
+        pip install requests python-telegram-bot
 
-    - name: Run Swimming Script
-      run: python .github/workflows/swimming.py  # Убедитесь, что путь соответствует структуре вашего репозитория
+    - name: Run Script
+      env:
+        ACCESS_TOKEN: ${{ secrets.STRAVA_ACCESS_TOKEN }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      run: python .github/workflows/swimming.py
+
+    - name: Commit changes
+      run: |
+        git config --global user.email "nikkuryshev98@gmail.com"
+        git config --global user.name "Yagooooose"
+        git add last_week_results.json
+        git commit -m "Update last week results"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
