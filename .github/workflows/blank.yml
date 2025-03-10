@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'  # Укажите необходимую версию Python
+        python-version: '3.10'  # Укажите необходимую версию Python
 
     - name: Run Swimming Script
       run: python workflows/swimming.py
