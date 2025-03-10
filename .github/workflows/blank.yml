@@ -1,13 +1,12 @@
-name: My Scheduled Workflow
+name: Run Swimming Script
 
 on:
   schedule:
-    # Runs at 3 AM UTC every day
-    - cron: '0 * 0 ? * * *'  # cron выражение для настройки расписания
+    - cron: '*/5 * * * *'  # Пример расписания
   workflow_dispatch:  # Позволяет вручную запускать workflow
-  
+
 jobs:
-  build:
+  run-swimming:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,12 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.10'  # Укажите необходимую версию Python
+        python-version: '3.x'  # Укажите необходимую версию Python
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
-    - name: Run script
-      run: python swimming.py
+    - name: Run Swimming Script
+      run: python workflows/swimming.py
