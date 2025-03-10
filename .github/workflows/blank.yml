@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.10'
+        python-version: '3.x'
 
     - name: Install dependencies
       run: |
@@ -29,10 +29,16 @@ jobs:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       run: python .github/workflows/swimming.py
 
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git diff --exit-code || echo "changes"
+
     - name: Commit changes
+      if: steps.check_changes.outputs.no_change != 'true'
       run: |
         git config --global user.email "nikkuryshev98@gmail.com"
-        git config --global user.name "Yagooooose"
+        git config --global user.name "Your Name"
         git add last_week_results.json
         git commit -m "Update last week results"
         git push
