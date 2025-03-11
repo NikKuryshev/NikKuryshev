@@ -7,11 +7,11 @@ from telegram.error import TelegramError
 
 # Настройки
 filename = 'last_week_results.json'
-access_token = os.environ['ACCESS_TOKEN']  # Берем токен из переменной окружения
+access_token = os.environ['ACCESS_TOKEN']
 club_id = '1426803'
 headers = {'Authorization': f'Bearer {access_token}'}
-telegram_bot_token = os.environ['TELEGRAM_BOT_TOKEN']  # Телеграм токен из переменной окружения
-chat_id = 50820587  # ID чата
+telegram_bot_token = os.environ['TELEGRAM_BOT_TOKEN']
+chat_id = 50820587
 
 def load_past_week_activities(filename):
     """Загрузить данные прошлой недели из файла."""
@@ -22,17 +22,27 @@ def load_past_week_activities(filename):
         return []
 
 def save_current_week_activities(filename, data):
-    """Сохранить текущие данные в файл."""
+    """Сохранить текущие данные в файл. Укажем, что источник - Strava."""
+    data_with_source = [{'data': act, 'source': 'Strava'} for act in data]
     with open(filename, 'w') as f:
-        json.dump(data, f)
+        json.dump(data_with_source, f, ensure_ascii=False, indent=4)
 
 def calculate_distances(activities):
-    """Вычисление суммарных расстояний для каждого спортсмена."""
+    """Вычисление суммарных расстояний для каждого спортсмена из всех источников."""
     result = {}
     for act in activities:
-        athlete_info = act.get("athlete", {})
+        source = act.get("source", "")
+        athlete_info = {}
+        
+        # Извлечение информации в зависимости от источника
+        if source == "Strava":
+            athlete_info = act.get("data", {}).get("athlete", {})
+            distance = act.get("data", {}).get("distance", 0)
+        elif source == "Telegram":
+            athlete_info = act.get("athlete", {})
+            distance = act.get("distance", 0)
+        
         athlete_name = athlete_info.get("firstname", "Unknown") + " " + athlete_info.get("lastname", "")
-        distance = act.get("distance", 0)
         result[athlete_name] = result.get(athlete_name, 0) + distance
     return result
 
@@ -61,9 +71,12 @@ else:
     api_response = []
 
 # Подсчет и вычисление прогресса
+# Мы предполагаем, что в прошлых данных тоже может быть несколько источников
 last_week_distances = calculate_distances(past_week_activities)
-current_week_distances = calculate_distances(api_response)
+# Преобразуем данные текущей недели к новому виду
+current_week_distances = calculate_distances([{'data': act, 'source': 'Strava'} for act in api_response])
 
+# Рассчитываем разницу
 difference = {}
 for athlete in current_week_distances:
     prev_distance = last_week_distances.get(athlete, 0)
