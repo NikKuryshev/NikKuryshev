@@ -1,1 +1,317 @@
-[{"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 4000.0, "moving_time": 4638, "elapsed_time": 5154, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "FireWatcherer", "lastname": "A."}, "name": "Zil", "distance": 2100.0, "moving_time": 2400, "elapsed_time": 2400, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Evening Swim", "distance": 5150.0, "moving_time": 5566, "elapsed_time": 5663, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 3300.0, "moving_time": 3373, "elapsed_time": 3542, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 4000.0, "moving_time": 4457, "elapsed_time": 5169, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 3200.0, "moving_time": 3467, "elapsed_time": 4001, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Afternoon Swim", "distance": 1700.0, "moving_time": 1801, "elapsed_time": 1829, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 1000.0, "moving_time": 1058, "elapsed_time": 1093, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 600.0, "moving_time": 648, "elapsed_time": 795, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 4000.0, "moving_time": 4524, "elapsed_time": 4710, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 2600.0, "moving_time": 2753, "elapsed_time": 4672, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 2000.0, "moving_time": 2172, "elapsed_time": 3226, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 2250.0, "moving_time": 2231, "elapsed_time": 3146, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 2800.0, "moving_time": 3174, "elapsed_time": 3368, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 2350.0, "moving_time": 2748, "elapsed_time": 3124, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 4500.0, "moving_time": 299474, "elapsed_time": 5632, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Lunch Swim", "distance": 500.0, "moving_time": 497, "elapsed_time": 575, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 1750.0, "moving_time": 1553, "elapsed_time": 1597, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Morning Swim", "distance": 2350.0, "moving_time": 2397, "elapsed_time": 3675, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}, {"resource_state": 2, "athlete": {"resource_state": 2, "firstname": "Andrey", "lastname": "K."}, "name": "Lunch Swim", "distance": 2600.0, "moving_time": 2785, "elapsed_time": 3032, "total_elevation_gain": 0, "type": "Swim", "sport_type": "Swim"}]
+[
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 4000.0,
+        "moving_time": 4638,
+        "elapsed_time": 5154,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "FireWatcherer",
+            "lastname": "A."
+        },
+        "name": "Zil",
+        "distance": 2100.0,
+        "moving_time": 2400,
+        "elapsed_time": 2400,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Evening Swim",
+        "distance": 5150.0,
+        "moving_time": 5566,
+        "elapsed_time": 5663,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 3300.0,
+        "moving_time": 3373,
+        "elapsed_time": 3542,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 4000.0,
+        "moving_time": 4457,
+        "elapsed_time": 5169,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 3200.0,
+        "moving_time": 3467,
+        "elapsed_time": 4001,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Afternoon Swim",
+        "distance": 1700.0,
+        "moving_time": 1801,
+        "elapsed_time": 1829,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 1000.0,
+        "moving_time": 1058,
+        "elapsed_time": 1093,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 600.0,
+        "moving_time": 648,
+        "elapsed_time": 795,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 4000.0,
+        "moving_time": 4524,
+        "elapsed_time": 4710,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 2600.0,
+        "moving_time": 2753,
+        "elapsed_time": 4672,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 2000.0,
+        "moving_time": 2172,
+        "elapsed_time": 3226,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 2250.0,
+        "moving_time": 2231,
+        "elapsed_time": 3146,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 2800.0,
+        "moving_time": 3174,
+        "elapsed_time": 3368,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 2350.0,
+        "moving_time": 2748,
+        "elapsed_time": 3124,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 4500.0,
+        "moving_time": 299474,
+        "elapsed_time": 5632,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Lunch Swim",
+        "distance": 500.0,
+        "moving_time": 497,
+        "elapsed_time": 575,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 1750.0,
+        "moving_time": 1553,
+        "elapsed_time": 1597,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Morning Swim",
+        "distance": 2350.0,
+        "moving_time": 2397,
+        "elapsed_time": 3675,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Andrey",
+            "lastname": "K."
+        },
+        "name": "Lunch Swim",
+        "distance": 2600.0,
+        "moving_time": 2785,
+        "elapsed_time": 3032,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "\u041d\u0438\u043a\u0438\u0442\u0430",
+            "lastname": "\u041a\u0443\u0440\u044b\u0448\u0435\u0432"
+        },
+        "name": "Training on 2025-03-11 11:54:25",
+        "distance": 2000.0,
+        "moving_time": 0,
+        "elapsed_time": 0,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim"
+    }
+]
