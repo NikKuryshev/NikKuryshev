@@ -2,7 +2,7 @@ name: Update Strava Data and Send Telegram Alert
 
 on:
   schedule:
-    - cron: '0 7 * * *'  # Запуск каждый день в 10 утра по московскому времени (7 утра UTC)
+    - cron: '0 0 * * *'  # Запуск каждый день в 10 утра по московскому времени (7 утра UTC)
   workflow_dispatch:
 
 jobs:
