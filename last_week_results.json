@@ -378,5 +378,21 @@
         },
         "source": "Strava",
         "date": "2025-03-11"
+    },
+    {
+        "resource_state": 2,
+        "athlete": {
+            "resource_state": 2,
+            "firstname": "Никита",
+            "lastname": "Курышев"
+        },
+        "date": "2025-03-11",
+        "distance": 2000.0,
+        "moving_time": 0,
+        "elapsed_time": 0,
+        "total_elevation_gain": 0,
+        "type": "Swim",
+        "sport_type": "Swim",
+        "source": "Telegram"
     }
 ]
